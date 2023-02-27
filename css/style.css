@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: blue;
+    --cor2: green;
+    --cor3: orange;
+    --cor4: black;
+    --cor5: rgb(224, 43, 43);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#faixaHeader{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    height: 90px;   
+    display: flex; 
+    justify-content: center; 
+    background-color: white;
+    position: fixed;
+}
+#caixaLogo{
+    display: flex;
+}
+
+header{
+    display:flex;
+    background-color: white;
+    width: 80%;
+    max-width: 1150px;
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    align-items: center;
+    
+
+}
+header img{
+    margin-right: 10px;
+}
+header > p{
+    text-transform:uppercase ;
+    display: flex;
+    align-items:center;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+#botao-menu {
+    display: none;
+}
+label[for='botao-menu']{
+    display: none;
+    background-color: black;
+    color:yellow;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 0px;
+
+
+
+}
+a{
+    display: inline-block;
+    text-align: center;
+}
+header > nav > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: var(--cor2);
+}
+main{
+    max-width: 1150px;
+    width: 80%;
+    margin: auto;
+    
+}
+#imagemTop{
+    margin: 0 0 0 0;
+    margin: 0;
+    background-image: url("imagens/webprogam.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+
+}
+header > nav > a:hover{
+     color: var(--cor5);
+     
+}
+@media(max-width:1450px){
+
+   #menu{
+    transition: all .4s;
+    margin-top: -1000%;
+    flex-direction: column;
+} 
+
+
+
+label[for='botao-menu']{
+
+    display: block;
+}
+#botao-menu:checked ~ #menu{
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    
+
+}
+}
+
+
+li{
+    margin-bottom: 16px;
+}
+p{
+    text-align: justify; 
+    font-size: 20px;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 24px;
+}
+footer{
+    display: flex;
+    width: 100%;
+    background-color: var(--cor1);
+    height: 150px;
+    color: white;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer > div{
+    width: 32%;
+    height: 100%;
+}
+
+#footerDireita{
+    background-color: blueviolet;
+    text-align: center;
+}
+
+#footerEsquerda{
+    background-color: blueviolet;
+    text-align: center;
+    flex-wrap: wrap;
+}
+

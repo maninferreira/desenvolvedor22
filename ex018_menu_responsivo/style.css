@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+#botao-menu{
+    display: none;
+}
+label[for='botao-menu']{
+    cursor: pointer;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    padding:5px ;
+    display: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+
+}
+#menu{
+    margin-top: 10px;
+    background-color: white;
+}
+a{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-decoration: none;
+    outline: 1px solid;
+    
+}
+#menu{
+    margin-top: 10px;
+}
+    
+a:hover{
+    background-color: white;
+    outline: black;
+    color: black;
+}
+@media (max-width:535px) {
+    #menu{
+        transition: all .4s;
+        margin-left: -500%;
+    }
+    label[for='botao-menu']{
+        display: block;
+    }
+}
+label[for=botao-menu]{
+    display: block;
+}
+#botao-menu:checked ~ #menu{
+    margin-left: 0px;
+}
+
+
+
+    
+
+
+
+
+   
+
+    
